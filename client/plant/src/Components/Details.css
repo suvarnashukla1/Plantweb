@@ -1,0 +1,154 @@
+
+.product-detail {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #f9f9f9;
+  height: 100vh; 
+  }
+  
+  .detail-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: flex-start;
+    
+  }
+  
+  .detail-image {
+    flex: 1; 
+    object-fit: cover; 
+    height: 100%;
+  }
+  
+  .detail-info {
+    flex: 1; /* Content takes up the remaining space */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .product-name {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .paras {
+    font-size: 17px;
+    margin-bottom: 20px;
+  }
+  
+  .product-price {
+    font-size: 1.7em;
+    color: green;
+    margin-top: 10px;
+  }
+  .heart-icon {
+    font-size: 24px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  .botto{
+    display: flex;
+    flex-direction: row;
+  }
+  .heart-icon {
+    font-size: 2em;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .add-to-cart-btn {
+    background-color: #047b36;
+    color: white;
+    width: 400px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .add-to-cart-btn:hover {
+    background-color: #2ecc71;
+  }
+    
+   /* .quantity-btn{
+    display: flex;
+    flex-direction: row;
+    margin-left: 80px;
+    gap: 10px;
+  }  */
+
+.quantity-container{
+  display: flex;
+  flex-direction: column;
+}
+
+  .star-filled {
+   
+    color: gold;
+    font-size: 2.4em;
+    cursor: pointer;
+  }
+  
+  .star-empty {
+    color: gray;
+    font-size: 2.4em;
+    cursor: pointer;
+  }
+  .rating-system{
+    margin-top: 30px;
+   
+  }
+  .comment-section{
+    display: flex;
+    flex-direction: column;
+  }
+  .comment-section {
+    margin-top: 40px;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .comment-section h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .comment-section textarea {
+    width: 70%;
+    height: 100px;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .comment-section button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 70%;
+    background-color: #047b36;
+  }
+ 
+  
+  .comment {
+    display: flex;
+    justify-content: space-between;  
+    align-items: center; 
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .deltee {
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 6px;  /
+  }
+  
+  .deltee:hover {
+    opacity: 0.7;
+  }

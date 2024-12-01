@@ -1,0 +1,111 @@
+/* Overall grid layout */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light grey background */
+  }
+  
+  /* Styling for individual product cards */
+  .product-card {
+    position: relative;
+    background: #ffffff; /* White background */
+    border: 1px solid #e0e0e0; /* Light border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .product-controls{
+    display: flex;
+    flex-direction: row;
+  }
+  .product-card:hover {
+    transform: translateY(-5px); /* Lift on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+    
+  }
+.search-box{
+  /* margin-left: 2%; */
+  margin-top: 1%;
+
+}
+  .sort-dropdown{
+margin-right: 1%;
+margin-top: 1%;
+padding: 8px 12px;
+
+  }
+  .category-dropdown{
+    margin-right: 2%;
+    margin-top: 1%;
+    width: 200px;
+    border-radius: 4px;
+  } 
+  .heart-icon {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    font-size: 10px;
+    cursor: pointer;
+    user-select: none;
+  }
+  .icos{
+    margin-left: 1%;
+    margin-top: 2%;
+    font-size: 20px;
+ 
+  }
+ .product-seller{
+  align-items: left;
+  font-weight: 700;
+  font-size: 0.7rem;
+ } 
+  .heart-icon:hover {
+    transform: scale(1.2); /* Slight zoom on hover */
+    transition: transform 0.2s;
+  }
+  
+  /* Product image styling */
+  .product-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover; /* Keeps aspect ratio */
+    margin: 10px auto;
+    display: block;
+    border-radius: 8px; /* Slightly rounded image corners */
+  }
+  
+  /* Product name styling */
+  .product-name {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #333333; /* Dark grey text */
+    font-weight: 600;
+  }
+  
+  .product-price {
+    color: #152218;
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .view-more-btn {
+    padding:8px 6px;
+    background: #034c02; /* Blue button */
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    width: 60%;
+  }
+  
+  .view-more-btn:hover {
+    background: #079457; /* Darker blue on hover */
+    transform: scale(1.05); 
+  }
+  

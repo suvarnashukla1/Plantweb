@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "sass-embedded": "^1.80.6"
+  },
+  "dependencies": {
+    "react-razorpay": "^3.0.1"
+  }
+}
