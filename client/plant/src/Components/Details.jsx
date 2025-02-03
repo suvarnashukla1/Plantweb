@@ -43,7 +43,7 @@ const Details = ({ addToCart }) => {
   useEffect(() => {
     const savedComments = JSON.parse(localStorage.getItem('comments')) || [];
     setComments(savedComments);
-  }, []);
+  }, []); 
 
   // Add a new comment
   const handleAddComment = () => {

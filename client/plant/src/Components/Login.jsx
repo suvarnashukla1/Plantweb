@@ -27,22 +27,19 @@ const Login = () => {
 
     try {
       setLoading(true);
-      setErrorMessage(''); // Clear previous error
+      setErrorMessage('');
 
-      // Send login request to the server
       const response = await axios.post('http://localhost:3002/login', {
         userName,
         password
       });
 
-      // Assuming the backend sends the JWT token as 'token' in the response
       const { token } = response.data;
 
       if (token) {
-        // Store the token in localStorage
+        
         localStorage.setItem('authToken', token);
         
-        // Redirect to dashboard
         window.location.href = '/dashboard';
       }
 

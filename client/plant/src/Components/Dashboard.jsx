@@ -5,7 +5,7 @@ import React, { useState, useEffect } from 'react';
 
 function Dashboard() {
   const [wishlist, setWishlist] = useState([]);
-  const location = useLocation(); // Get current route
+  const location = useLocation(); 
 
   const toggleWishlist = (item) => {
     setWishlist((prevWishlist) =>
@@ -27,24 +27,6 @@ function Dashboard() {
     { name: 'Revansh', profileImage: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTziDETQGQxTuvMXFbXaNohXRV6541LTrNNDuAFc11ugZ-pAelZf7HP4pFFIMfAILPz2eI&usqp=CAU', orders: 12 },
     { name: 'Suchitra', profileImage: 'https://raw.githubusercontent.com/Ashwinvalento/cartoon-avatar/master/lib/images/female/10.png', orders: 8 },
   ];
-
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://www.chatbase.co/embed.min.js';
-    script.async = true;
-    script.defer = true;
-    script.onload = () => {
-      window.embeddedChatbotConfig = {
-        chatbotId: "u527PTfE_0VIZq7RbeiXt",
-        domain: "www.chatbase.co",
-      };
-    };
-    document.body.appendChild(script);
-
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
 
   const isLoginPage = location.pathname === '/login';
   const isLogoutPage = location.pathname === '/register';
@@ -76,10 +58,9 @@ function Dashboard() {
         <header className="header">
           <div>
             <h1>Welcome, User!</h1>
-            <p>Welcome to natoshop, one way shop for plants</p>
+            <p>Welcome to eco-wave, one way shop for plants</p>
           </div>
           <div className="header-icons">
-            {/* User profile */}
             <div className="user-profile">
               <Link to={`/login`}>
               <span className="icon">👤</span></Link>

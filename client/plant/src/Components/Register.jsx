@@ -32,15 +32,12 @@ const Register = () => {
         password: password,
       });
 
-      // Assuming the server sends back the token in response.data.token
       const { token } = response.data;
 
-      // Save the JWT token in localStorage or cookies
       if (token) {
         localStorage.setItem('jwtToken', token);  // Store the JWT token in localStorage
       }
 
-      // Redirect to the dashboard or home page
       window.location.href = '/dashboard'; // Adjust this as needed
 
     } catch (error) {

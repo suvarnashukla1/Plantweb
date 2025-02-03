@@ -6,22 +6,12 @@ import { FaSearch } from "react-icons/fa";
 
 const ProductGrid = () => {
   const [likedProducts, setLikedProducts] = useState({});
-  const [sortOrder, setSortOrder] = useState(''); // State to manage sort order
-  const [selectedCategory, setSelectedCategory] = useState('All'); // State to manage selected category
-  const [searchQuery, setSearchQuery] = useState(''); // State to manage search input
+  const [sortOrder, setSortOrder] = useState(''); 
+  const [selectedCategory, setSelectedCategory] = useState('All'); 
+  const [searchQuery, setSearchQuery] = useState(''); 
 
-  // Load liked products from localStorage on initial render
-  useEffect(() => {
-    const storedLikedProducts = JSON.parse(localStorage.getItem('likedProducts')) || {};
-    setLikedProducts(storedLikedProducts);
-  }, []);
 
-  // Save liked products to localStorage whenever they change
-  useEffect(() => {
-    localStorage.setItem('likedProducts', JSON.stringify(likedProducts));
-  }, [likedProducts]);
-
-  // Toggle heart icon
+  
   const toggleHeart = (productId) => {
     setLikedProducts((prev) => {
       const newLikedProducts = { ...prev };
