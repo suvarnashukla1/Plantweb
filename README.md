@@ -34,14 +34,5 @@ Run the following commands to set up the project:
 # Clone the Repository  
 git clone https://github.com/your-username/eco-friendly-ecommerce.git  
 
-# Navigate to the project directory  
-cd eco-friendly-ecommerce  
 
-# Install dependencies  
-npm install  
-
-# Start the frontend  
-npm run dev  
-
-# Start the backend  
 npx nodemon index.js  
