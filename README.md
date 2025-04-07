@@ -26,13 +26,11 @@ A full-stack e-commerce platform dedicated to promoting **sustainable and eco-fr
 
 ---
 
-## 📥 Installation  
 
-Run the following commands to set up the project:  
+## 🔧 Installation
 
-```sh
-# Clone the Repository  
-git clone https://github.com/your-username/eco-friendly-ecommerce.git  
+1. **Clone the Repository**:
 
+   ```bash
+   git clone https://github.com/suvarnashukla1/Plantweb.git
 
-npx nodemon index.js  
