@@ -1,10 +1,10 @@
-# 🌱 Eco-Friendly E-Commerce  
+#  Eco-Friendly E-Commerce  
 
 A full-stack e-commerce platform dedicated to promoting **sustainable and eco-friendly products**. This application provides a seamless shopping experience with **secure authentication (JWT & OAuth) and PayPal integration** for smooth transactions.  
 
 ---
 
-## 🚀 Features  
+##  Features  
 
 ### 🛒 For Customers:  
 ✅ **Browse & Purchase** – Explore a wide range of eco-friendly products.  
